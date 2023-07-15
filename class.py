@@ -84,7 +84,6 @@ class kusoni(kusonim):
             for x,i in enumerate(i.findAll("h2",{"class":"episodeye"})):
                 linkhr.append(i.find("a")["href"])
                 linkttl.append(i.find("a")["title"])
-        print(linkttl)
         [print(n,i) for n,i in enumerate(linkttl,1)]
         pil = input("Pilih mana? ")
         self.pilihAnim(linkhr[int(pil)-1])
