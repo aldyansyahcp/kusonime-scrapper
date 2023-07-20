@@ -65,7 +65,7 @@ class kusonim:
         subprocess.call(["$HOME/./download_file -m 5 {}".format(lin)],shell=True)
         os.system(f"mv {url} {pdname}")
         if os.name == "posix":
-            os.system(f"mv {pdname} {sdcard/Download/Video}")
+            os.system("mv {} {}".format(pdname,"/sdcard/Download/video"))
             print("Downloads Saved in sdcard/Download/")
         elif os.name == "windows":
             os.system(f"mv {pdname} {C:/Users/Downloads}")
